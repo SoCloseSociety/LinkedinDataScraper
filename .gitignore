@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets & session
+.env
+linkedin_cookies.json
+
+# Output files
+output/*.csv
+output/*.xlsx
+!output/.gitkeep
+
+# Legacy data
+legacy/*.csv

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1b1b1b"/>
+      <stop offset="100%" style="stop-color:#2a2a2a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#575ECF"/>
+      <stop offset="100%" style="stop-color:#7B80E0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" rx="12" fill="url(#bg)"/>
+
+  <!-- Accent line top -->
+  <rect x="0" y="0" width="900" height="4" rx="2" fill="url(#accent)"/>
+
+  <!-- Decorative dots pattern -->
+  <g opacity="0.06" fill="#575ECF">
+    <circle cx="50" cy="50" r="3"/>
+    <circle cx="90" cy="50" r="3"/>
+    <circle cx="130" cy="50" r="3"/>
+    <circle cx="50" cy="90" r="3"/>
+    <circle cx="90" cy="90" r="3"/>
+    <circle cx="130" cy="90" r="3"/>
+    <circle cx="770" cy="210" r="3"/>
+    <circle cx="810" cy="210" r="3"/>
+    <circle cx="850" cy="210" r="3"/>
+    <circle cx="770" cy="250" r="3"/>
+    <circle cx="810" cy="250" r="3"/>
+    <circle cx="850" cy="250" r="3"/>
+  </g>
+
+  <!-- SoClose Logo Mark -->
+  <g transform="translate(80, 100)">
+    <!-- Diamond/bracket shape -->
+    <rect x="0" y="12" width="80" height="80" rx="16" fill="none" stroke="#575ECF" stroke-width="3" transform="rotate(-10, 40, 52)"/>
+    <rect x="10" y="22" width="60" height="60" rx="12" fill="#575ECF" opacity="0.15" transform="rotate(-10, 40, 52)"/>
+    <!-- "SC" initials -->
+    <text x="24" y="64" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="800" font-size="36" fill="#575ECF" letter-spacing="-2">SC</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="200" y="130" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="800" font-size="42" fill="#FFFFFF" letter-spacing="-1">
+    LinkedIn Data Scraper
+  </text>
+
+  <!-- Subtitle -->
+  <text x="200" y="165" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="400" font-size="18" fill="#c5c1b9">
+    Extract profiles, emails &amp; contacts at scale
+  </text>
+
+  <!-- Feature pills -->
+  <g transform="translate(200, 190)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="120" height="32" rx="16" fill="#575ECF" opacity="0.15"/>
+    <rect x="0" y="0" width="120" height="32" rx="16" fill="none" stroke="#575ECF" stroke-width="1" opacity="0.4"/>
+    <text x="60" y="21" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#7B80E0">Voyager API</text>
+
+    <!-- Pill 2 -->
+    <rect x="135" y="0" width="90" height="32" rx="16" fill="#575ECF" opacity="0.15"/>
+    <rect x="135" y="0" width="90" height="32" rx="16" fill="none" stroke="#575ECF" stroke-width="1" opacity="0.4"/>
+    <text x="180" y="21" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#7B80E0">Stealth</text>
+
+    <!-- Pill 3 -->
+    <rect x="240" y="0" width="80" height="32" rx="16" fill="#575ECF" opacity="0.15"/>
+    <rect x="240" y="0" width="80" height="32" rx="16" fill="none" stroke="#575ECF" stroke-width="1" opacity="0.4"/>
+    <text x="280" y="21" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#7B80E0">Excel</text>
+
+    <!-- Pill 4 -->
+    <rect x="335" y="0" width="140" height="32" rx="16" fill="#575ECF" opacity="0.15"/>
+    <rect x="335" y="0" width="140" height="32" rx="16" fill="none" stroke="#575ECF" stroke-width="1" opacity="0.4"/>
+    <text x="405" y="21" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#7B80E0">15+ Data Fields</text>
+
+    <!-- Pill 5 -->
+    <rect x="490" y="0" width="130" height="32" rx="16" fill="#575ECF" opacity="0.15"/>
+    <rect x="490" y="0" width="130" height="32" rx="16" fill="none" stroke="#575ECF" stroke-width="1" opacity="0.4"/>
+    <text x="555" y="21" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#7B80E0">Cross-Platform</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <g transform="translate(0, 260)">
+    <rect x="30" y="0" width="840" height="1" fill="#575ECF" opacity="0.2"/>
+    <text x="30" y="25" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#575ECF">soclose.co</text>
+    <text x="870" y="25" text-anchor="end" font-family="system-ui, sans-serif" font-weight="400" font-size="12" fill="#666">by SoCloseSociety</text>
+  </g>
+</svg>

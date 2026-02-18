@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linkedin-data-scraper"
+version = "2.0.0"
+description = "Python tool to scrape LinkedIn search results and extract professional profile data (email, phone, experience, skills). Export to Excel with color coding and CSV. Playwright stealth + Voyager API interception."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Enzo Day"}, {name = "SoCloseSociety"}]
+keywords = [
+    "linkedin", "scraper", "linkedin-scraper", "data-extraction",
+    "lead-generation", "profile-scraper", "web-scraping",
+    "linkedin-automation", "linkedin-export", "linkedin-to-excel",
+    "linkedin-email", "linkedin-contacts", "linkedin-profiles",
+    "people-search", "playwright", "voyager-api",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Topic :: Office/Business",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+]
+dependencies = [
+    "playwright>=1.40.0",
+    "playwright-stealth>=1.0.6",
+    "pandas>=2.2.0",
+    "openpyxl>=3.1.0",
+    "rich>=13.7.0",
+    "tenacity>=8.2.0",
+    "streamlit>=1.30.0",
+    "nest-asyncio>=1.6.0",
+    "python-dotenv>=1.0.0",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=5.0.0",
+]
+
+[project.scripts]
+linkedin-scraper = "linkedin_scraper.__main__:cli_entry"
+
+[project.urls]
+Homepage = "https://github.com/SoCloseSociety/LinkedinDataScraper"
+Repository = "https://github.com/SoCloseSociety/LinkedinDataScraper"
+Issues = "https://github.com/SoCloseSociety/LinkedinDataScraper/issues"
+
+[tool.setuptools.packages.find]
+include = ["linkedin_scraper*"]
