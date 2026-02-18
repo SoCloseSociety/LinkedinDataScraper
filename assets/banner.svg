@@ -8,10 +8,11 @@
       <stop offset="0%" style="stop-color:#575ECF"/>
       <stop offset="100%" style="stop-color:#7B80E0"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
+    <linearGradient id="heart-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#575ECF"/>
+      <stop offset="40%" style="stop-color:#CF577C"/>
+      <stop offset="100%" style="stop-color:#E8945A"/>
+    </linearGradient>
   </defs>
 
   <!-- Background -->
@@ -36,13 +37,14 @@
     <circle cx="850" cy="250" r="3"/>
   </g>
 
-  <!-- SoClose Logo Mark -->
+  <!-- SoClose Heart Logo -->
   <g transform="translate(80, 100)">
-    <!-- Diamond/bracket shape -->
-    <rect x="0" y="12" width="80" height="80" rx="16" fill="none" stroke="#575ECF" stroke-width="3" transform="rotate(-10, 40, 52)"/>
-    <rect x="10" y="22" width="60" height="60" rx="12" fill="#575ECF" opacity="0.15" transform="rotate(-10, 40, 52)"/>
-    <!-- "SC" initials -->
-    <text x="24" y="64" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="800" font-size="36" fill="#575ECF" letter-spacing="-2">SC</text>
+    <!-- Heart shape matching soclose.co logo -->
+    <path d="M40 75 C40 75, 0 45, 0 25 C0 10, 12 0, 25 0 C32 0, 38 4, 40 10 C42 4, 48 0, 55 0 C68 0, 80 10, 80 25 C80 45, 40 75, 40 75 Z"
+      fill="url(#heart-grad)" opacity="0.9"/>
+    <!-- Glow effect -->
+    <path d="M40 75 C40 75, 0 45, 0 25 C0 10, 12 0, 25 0 C32 0, 38 4, 40 10 C42 4, 48 0, 55 0 C68 0, 80 10, 80 25 C80 45, 40 75, 40 75 Z"
+      fill="url(#heart-grad)" opacity="0.15" transform="scale(1.1) translate(-3, -3)"/>
   </g>
 
   <!-- Main Title -->
@@ -57,27 +59,22 @@
 
   <!-- Feature pills -->
   <g transform="translate(200, 190)">
-    <!-- Pill 1 -->
     <rect x="0" y="0" width="120" height="32" rx="16" fill="#575ECF" opacity="0.15"/>
     <rect x="0" y="0" width="120" height="32" rx="16" fill="none" stroke="#575ECF" stroke-width="1" opacity="0.4"/>
     <text x="60" y="21" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#7B80E0">Voyager API</text>
 
-    <!-- Pill 2 -->
     <rect x="135" y="0" width="90" height="32" rx="16" fill="#575ECF" opacity="0.15"/>
     <rect x="135" y="0" width="90" height="32" rx="16" fill="none" stroke="#575ECF" stroke-width="1" opacity="0.4"/>
     <text x="180" y="21" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#7B80E0">Stealth</text>
 
-    <!-- Pill 3 -->
     <rect x="240" y="0" width="80" height="32" rx="16" fill="#575ECF" opacity="0.15"/>
     <rect x="240" y="0" width="80" height="32" rx="16" fill="none" stroke="#575ECF" stroke-width="1" opacity="0.4"/>
     <text x="280" y="21" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#7B80E0">Excel</text>
 
-    <!-- Pill 4 -->
     <rect x="335" y="0" width="140" height="32" rx="16" fill="#575ECF" opacity="0.15"/>
     <rect x="335" y="0" width="140" height="32" rx="16" fill="none" stroke="#575ECF" stroke-width="1" opacity="0.4"/>
     <text x="405" y="21" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#7B80E0">15+ Data Fields</text>
 
-    <!-- Pill 5 -->
     <rect x="490" y="0" width="130" height="32" rx="16" fill="#575ECF" opacity="0.15"/>
     <rect x="490" y="0" width="130" height="32" rx="16" fill="none" stroke="#575ECF" stroke-width="1" opacity="0.4"/>
     <text x="555" y="21" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#7B80E0">Cross-Platform</text>

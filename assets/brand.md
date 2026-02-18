@@ -8,7 +8,8 @@
 | **Website** | [soclose.co](https://soclose.co) |
 | **GitHub** | [SoCloseSociety](https://github.com/SoCloseSociety) |
 | **Tagline** | Digital Innovation Through Automation & AI |
-| **Email** | hello@soclose.co |
+| **Email** | contact@soclose.co |
+| **Logo** | Gradient heart (purple/rose/orange) — see `assets/soclose-favicon.png` |
 
 ---
 
@@ -38,7 +39,7 @@
 |------|-----|-------|
 | **Data Found (Green)** | `#C6EFCE` | Email found, successful data |
 | **Data Missing (Red)** | `#FFC7CE` | Email missing, warning |
-| **Info Blue** | `#DDEBF7` | Phone data, informational |
+| **Info Purple** | `#E8E9F7` | Phone data, informational |
 | **Alt Row** | `#F2F4F8` | Alternating table rows |
 
 ---
@@ -55,15 +56,13 @@
 
 ---
 
-## Logo Usage
+## Logo
 
-- **Full Logo**: `assets/logo.svg` — 128x128, circle with data network icon
+- **Official Logo**: Gradient heart icon from soclose.co — `assets/soclose-favicon.png` (73x74px)
 - **Banner**: `assets/banner.svg` — 900x300, used at top of README
 - **Social Preview**: `assets/social-preview.svg` — 1280x640, for GitHub Open Graph
 
-### Logo Color Variants
-- **On Dark**: Purple accent (`#575ECF`) on dark background (`#1b1b1b`)
-- **On Light**: Purple accent (`#575ECF`) on white/light background
+The SoClose logo is a stylized heart with a gradient from purple (#575ECF) through rose to warm orange, representing connection and innovation.
 
 ---
 

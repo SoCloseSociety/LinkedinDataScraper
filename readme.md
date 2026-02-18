@@ -365,7 +365,7 @@ This tool is provided for **educational and research purposes only**. You are so
 
 <br/>
 
-<a href="https://soclose.co"><img src="assets/logo.svg" alt="SoClose" width="56"/></a>
+<a href="https://soclose.co"><img src="assets/soclose-favicon.png" alt="SoClose" width="48"/></a>
 
 **Built by [SoClose](https://soclose.co) — Digital Innovation Through Automation & AI**
 
@@ -374,7 +374,7 @@ This tool is provided for **educational and research purposes only**. You are so
 [![Website](https://img.shields.io/badge/soclose.co-575ECF?style=flat-square&logo=safari&logoColor=white)](https://soclose.co)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-575ECF?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/company/soclose-agency)
 [![Twitter](https://img.shields.io/badge/Twitter-575ECF?style=flat-square&logo=x&logoColor=white)](https://twitter.com/SoCloseAgency)
-[![Email](https://img.shields.io/badge/hello%40soclose.co-575ECF?style=flat-square&logo=gmail&logoColor=white)](mailto:hello@soclose.co)
+[![Email](https://img.shields.io/badge/contact%40soclose.co-575ECF?style=flat-square&logo=gmail&logoColor=white)](mailto:contact@soclose.co)
 
 <sub>If this tool helped you, give it a star!</sub>
 
