@@ -13,11 +13,6 @@
       <stop offset="0%" style="stop-color:#575ECF"/>
       <stop offset="100%" style="stop-color:#7B80E0"/>
     </linearGradient>
-    <linearGradient id="heart-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#575ECF"/>
-      <stop offset="40%" style="stop-color:#CF577C"/>
-      <stop offset="100%" style="stop-color:#E8945A"/>
-    </linearGradient>
   </defs>
 
   <!-- Background -->
@@ -53,14 +48,16 @@
   <!-- Glow effect bottom-right -->
   <circle cx="1280" cy="640" r="300" fill="#575ECF" opacity="0.03"/>
 
-  <!-- SoClose Heart Logo -->
-  <g transform="translate(100, 170)">
-    <!-- Heart shape matching soclose.co logo -->
-    <path d="M55 105 C55 105, 0 62, 0 35 C0 14, 17 0, 35 0 C44 0, 52 5.5, 55 14 C58 5.5, 66 0, 75 0 C93 0, 110 14, 110 35 C110 62, 55 105, 55 105 Z"
-      fill="url(#heart-grad)" opacity="0.9"/>
-    <!-- Glow -->
-    <path d="M55 105 C55 105, 0 62, 0 35 C0 14, 17 0, 35 0 C44 0, 52 5.5, 55 14 C58 5.5, 66 0, 75 0 C93 0, 110 14, 110 35 C110 62, 55 105, 55 105 Z"
-      fill="url(#heart-grad)" opacity="0.12" transform="scale(1.15) translate(-4, -4)"/>
+  <!-- SoClose "&" Logo -->
+  <g transform="translate(80, 155)">
+    <!-- Stylized ampersand — the SoClose logo mark -->
+    <text font-family="Georgia, 'Times New Roman', serif" font-weight="400" font-size="145" fill="white" opacity="0.95"
+      x="0" y="115" letter-spacing="-5">&amp;</text>
+    <!-- Small "+" cross accent -->
+    <g transform="translate(95, 100)" opacity="0.8">
+      <line x1="0" y1="8" x2="16" y2="8" stroke="white" stroke-width="3" stroke-linecap="round"/>
+      <line x1="8" y1="0" x2="8" y2="16" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    </g>
   </g>
 
   <!-- Main title -->

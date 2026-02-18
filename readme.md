@@ -365,7 +365,7 @@ This tool is provided for **educational and research purposes only**. You are so
 
 <br/>
 
-<a href="https://soclose.co"><img src="assets/soclose-favicon.png" alt="SoClose" width="48"/></a>
+<a href="https://soclose.co"><img src="assets/soclose-logo.png" alt="SoClose" width="56" style="background:#1b1b1b;border-radius:12px;padding:6px"/></a>
 
 **Built by [SoClose](https://soclose.co) — Digital Innovation Through Automation & AI**
 

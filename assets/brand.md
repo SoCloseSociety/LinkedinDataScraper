@@ -9,7 +9,7 @@
 | **GitHub** | [SoCloseSociety](https://github.com/SoCloseSociety) |
 | **Tagline** | Digital Innovation Through Automation & AI |
 | **Email** | contact@soclose.co |
-| **Logo** | Gradient heart (purple/rose/orange) — see `assets/soclose-favicon.png` |
+| **Logo** | White calligraphic "&" with "+" accent — see `assets/soclose-logo.png` |
 
 ---
 
@@ -58,11 +58,12 @@
 
 ## Logo
 
-- **Official Logo**: Gradient heart icon from soclose.co — `assets/soclose-favicon.png` (73x74px)
+- **Official Logo**: `assets/soclose-logo.png` — 960x960, white calligraphic "&" with "+" accent (transparent bg)
+- **SVG Variant**: `assets/logo.svg` — 128x128, white "&" on dark circle
 - **Banner**: `assets/banner.svg` — 900x300, used at top of README
 - **Social Preview**: `assets/social-preview.svg` — 1280x640, for GitHub Open Graph
 
-The SoClose logo is a stylized heart with a gradient from purple (#575ECF) through rose to warm orange, representing connection and innovation.
+The SoClose logo is a stylized calligraphic ampersand "&" in white with a small "+" cross accent at the bottom-right. It represents connection and bringing things together. Use on dark backgrounds (`#1b1b1b`) for best visibility.
 
 ---
 

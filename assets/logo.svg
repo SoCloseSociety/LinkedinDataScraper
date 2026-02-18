@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-  <defs>
-    <linearGradient id="heart-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#575ECF"/>
-      <stop offset="40%" style="stop-color:#CF577C"/>
-      <stop offset="100%" style="stop-color:#E8945A"/>
-    </linearGradient>
-  </defs>
+  <!-- Dark circle background -->
+  <circle cx="64" cy="64" r="62" fill="#1b1b1b"/>
 
-  <!-- SoClose heart logo — matching soclose.co -->
-  <path d="M64 110 C64 110, 10 68, 10 38 C10 18, 26 4, 42 4 C52 4, 60 10, 64 18 C68 10, 76 4, 86 4 C102 4, 118 18, 118 38 C118 68, 64 110, 64 110 Z"
-    fill="url(#heart-grad)"/>
+  <!-- SoClose "&" logo mark -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-weight="400" font-size="90" fill="white"
+    x="24" y="92" letter-spacing="-3">&amp;</text>
+
+  <!-- Small "+" cross accent -->
+  <g transform="translate(84, 82)" opacity="0.85">
+    <line x1="0" y1="6" x2="12" y2="6" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="6" y1="0" x2="6" y2="12" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
 </svg>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="300" viewBox="0 0 900 300">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#1b1b1b"/>
@@ -7,11 +7,6 @@
     <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#575ECF"/>
       <stop offset="100%" style="stop-color:#7B80E0"/>
-    </linearGradient>
-    <linearGradient id="heart-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#575ECF"/>
-      <stop offset="40%" style="stop-color:#CF577C"/>
-      <stop offset="100%" style="stop-color:#E8945A"/>
     </linearGradient>
   </defs>
 
@@ -23,28 +18,22 @@
 
   <!-- Decorative dots pattern -->
   <g opacity="0.06" fill="#575ECF">
-    <circle cx="50" cy="50" r="3"/>
-    <circle cx="90" cy="50" r="3"/>
-    <circle cx="130" cy="50" r="3"/>
-    <circle cx="50" cy="90" r="3"/>
-    <circle cx="90" cy="90" r="3"/>
-    <circle cx="130" cy="90" r="3"/>
-    <circle cx="770" cy="210" r="3"/>
-    <circle cx="810" cy="210" r="3"/>
-    <circle cx="850" cy="210" r="3"/>
-    <circle cx="770" cy="250" r="3"/>
-    <circle cx="810" cy="250" r="3"/>
-    <circle cx="850" cy="250" r="3"/>
+    <circle cx="50" cy="50" r="3"/><circle cx="90" cy="50" r="3"/><circle cx="130" cy="50" r="3"/>
+    <circle cx="50" cy="90" r="3"/><circle cx="90" cy="90" r="3"/><circle cx="130" cy="90" r="3"/>
+    <circle cx="770" cy="210" r="3"/><circle cx="810" cy="210" r="3"/><circle cx="850" cy="210" r="3"/>
+    <circle cx="770" cy="250" r="3"/><circle cx="810" cy="250" r="3"/><circle cx="850" cy="250" r="3"/>
   </g>
 
-  <!-- SoClose Heart Logo -->
-  <g transform="translate(80, 100)">
-    <!-- Heart shape matching soclose.co logo -->
-    <path d="M40 75 C40 75, 0 45, 0 25 C0 10, 12 0, 25 0 C32 0, 38 4, 40 10 C42 4, 48 0, 55 0 C68 0, 80 10, 80 25 C80 45, 40 75, 40 75 Z"
-      fill="url(#heart-grad)" opacity="0.9"/>
-    <!-- Glow effect -->
-    <path d="M40 75 C40 75, 0 45, 0 25 C0 10, 12 0, 25 0 C32 0, 38 4, 40 10 C42 4, 48 0, 55 0 C68 0, 80 10, 80 25 C80 45, 40 75, 40 75 Z"
-      fill="url(#heart-grad)" opacity="0.15" transform="scale(1.1) translate(-3, -3)"/>
+  <!-- SoClose "&" Logo -->
+  <g transform="translate(65, 88)">
+    <!-- Stylized ampersand — the SoClose logo mark -->
+    <text font-family="Georgia, 'Times New Roman', serif" font-weight="400" font-size="110" fill="white" opacity="0.95"
+      x="0" y="88" letter-spacing="-4">&amp;</text>
+    <!-- Small "+" cross accent at bottom-right -->
+    <g transform="translate(72, 78)" opacity="0.8">
+      <line x1="0" y1="6" x2="12" y2="6" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="6" y1="0" x2="6" y2="12" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
   </g>
 
   <!-- Main Title -->
