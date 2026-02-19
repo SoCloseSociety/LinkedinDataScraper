@@ -1,35 +1,50 @@
-<div align="center">
+<p align="center">
+  <img src="assets/banner.svg" alt="LinkedIn Data Scraper" width="900">
+</p>
 
-<img src="assets/banner.svg" alt="LinkedIn Data Scraper by SoClose" width="100%"/>
+<p align="center">
+  <strong>Scrape LinkedIn search results and extract professional profile data — Excel & CSV export with 15+ fields.</strong>
+</p>
 
-<br/>
-<br/>
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-575ECF?style=flat-square" alt="License: MIT"></a>
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.9%2B-575ECF?style=flat-square&logo=python&logoColor=white" alt="Python 3.9+"></a>
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-575ECF?style=flat-square" alt="Platform">
+  <a href="https://playwright.dev/"><img src="https://img.shields.io/badge/Playwright-Stealth-575ECF?style=flat-square&logo=playwright&logoColor=white" alt="Playwright"></a>
+  <a href="https://streamlit.io/"><img src="https://img.shields.io/badge/Streamlit-Web%20UI-575ECF?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"></a>
+  <a href="https://github.com/SoCloseSociety/LinkedinDataScraper/stargazers"><img src="https://img.shields.io/github/stars/SoCloseSociety/LinkedinDataScraper?style=flat-square&color=575ECF" alt="GitHub Stars"></a>
+  <a href="https://github.com/SoCloseSociety/LinkedinDataScraper/issues"><img src="https://img.shields.io/github/issues/SoCloseSociety/LinkedinDataScraper?style=flat-square&color=575ECF" alt="Issues"></a>
+  <a href="https://github.com/SoCloseSociety/LinkedinDataScraper/network/members"><img src="https://img.shields.io/github/forks/SoCloseSociety/LinkedinDataScraper?style=flat-square&color=575ECF" alt="Forks"></a>
+</p>
 
-[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-575ECF?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-575ECF?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Mac%20%7C%20Win%20%7C%20Linux-575ECF?style=for-the-badge)]()
-[![Playwright](https://img.shields.io/badge/Playwright-Stealth-575ECF?style=for-the-badge&logo=playwright&logoColor=white)](https://playwright.dev/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Web%20UI-575ECF?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Docker](https://img.shields.io/badge/Docker-Ready-575ECF?style=for-the-badge&logo=docker&logoColor=white)](Dockerfile)
-
-**Python tool to scrape LinkedIn search results and extract professional profile data.**<br>
-Search by keywords, job title, location, and industry. Export to **Excel** (.xlsx) with color-coded formatting and **CSV**.
-
-[Quick Start](#-quick-start) &bull; [CLI Usage](#-cli-usage) &bull; [Web UI](#-web-interface-streamlit) &bull; [Excel Output](#-excel-output-format) &bull; [Docker](#-docker-deployment)
+<p align="center">
+  <a href="#quick-start">Quick Start</a> &bull;
+  <a href="#key-features">Features</a> &bull;
+  <a href="#configuration">Configuration</a> &bull;
+  <a href="#faq">FAQ</a> &bull;
+  <a href="#contributing">Contributing</a>
+</p>
 
 ---
 
-</div>
+## What is LinkedIn Data Scraper?
 
-## Why This Tool?
-
-Most LinkedIn scrapers break constantly because they parse HTML that LinkedIn changes every week. **This scraper intercepts LinkedIn's internal Voyager API** to get structured JSON data directly — the same data LinkedIn's own frontend uses. When the API doesn't capture something, it falls back to DOM parsing.
+**LinkedIn Data Scraper** is a free, open-source **LinkedIn profile extraction tool** built with Python and Playwright. Most LinkedIn scrapers break constantly because they parse HTML that LinkedIn changes every week. **This scraper intercepts LinkedIn's internal Voyager API** to get structured JSON data directly — the same data LinkedIn's own frontend uses. When the API doesn't capture something, it falls back to DOM parsing.
 
 **The result**: reliable data extraction that survives LinkedIn UI updates, with 15+ fields per profile including emails, phone numbers, experience, education, and skills.
 
+### Who is this for?
+
+- **Recruiters** building candidate pipelines from LinkedIn searches
+- **Sales Teams** extracting lead data for CRM import
+- **Market Researchers** analyzing talent pools by industry and location
+- **HR Departments** benchmarking compensation and title distribution
+- **Growth Hackers** building B2B prospect lists at scale
+- **Developers** learning Playwright stealth and API interception
+
 ---
 
-## Features
+## Key Features
 
 | Feature | Description |
 |---------|-------------|
@@ -332,6 +347,45 @@ LinkedinDataScraper/
 
 ---
 
+## FAQ
+
+**Q: Is this free?**
+A: Yes. LinkedIn Data Scraper is 100% free and open source under the MIT license.
+
+**Q: Do I need a LinkedIn API key?**
+A: No. This tool uses Playwright browser automation with Voyager API interception, no official API key needed.
+
+**Q: How many profiles can I scrape?**
+A: The built-in safety cap is 80 profiles per session to respect LinkedIn's rate limits. Keep `--max-results` under 50 for regular use.
+
+**Q: Are my credentials safe?**
+A: Credentials are stored in a local `.env` file that is gitignored. Cookie sessions are saved locally for future runs.
+
+**Q: Does it work without a LinkedIn account?**
+A: No. LinkedIn requires authentication to view search results and profiles.
+
+**Q: Does it work on Mac / Linux?**
+A: Yes. Fully cross-platform on Windows, macOS, and Linux with Chrome, Edge, or Chromium.
+
+**Q: Can I run it without a browser window?**
+A: Yes. Use `--headless` mode. But for the first run, use visible mode to handle any security challenges.
+
+---
+
+## Alternatives Comparison
+
+| Feature | LinkedIn Data Scraper | LinkedIn API | Manual Copy-Paste | Paid Tools |
+|---------|----------------------|-------------|-------------------|-----------|
+| Price | **Free** | Free (limited) | Free | $50-300/mo |
+| Voyager API interception | Yes | N/A | N/A | Varies |
+| 15+ data fields | Yes | Rate limited | Manual | Yes |
+| Excel with formatting | Yes | No | No | Basic |
+| Open source | Yes | N/A | N/A | No |
+| Web UI (Streamlit) | Yes | N/A | N/A | Yes |
+| Docker ready | Yes | N/A | N/A | Varies |
+
+---
+
 ## Contributing
 
 Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
@@ -361,21 +415,22 @@ This tool is provided for **educational and research purposes only**. You are so
 
 ---
 
-<div align="center">
+<p align="center">
+  <strong>If this project helps you, please give it a star!</strong><br>
+  It helps others discover this tool.<br><br>
+  <a href="https://github.com/SoCloseSociety/LinkedinDataScraper">
+    <img src="https://img.shields.io/github/stars/SoCloseSociety/LinkedinDataScraper?style=for-the-badge&logo=github&color=575ECF" alt="Star this repo">
+  </a>
+</p>
 
-<br/>
+<br>
 
-<a href="https://soclose.co"><img src="assets/soclose-logo.png" alt="SoClose" width="56" style="background:#1b1b1b;border-radius:12px;padding:6px"/></a>
-
-**Built by [SoClose](https://soclose.co) — Digital Innovation Through Automation & AI**
-
-<br/>
-
-[![Website](https://img.shields.io/badge/soclose.co-575ECF?style=flat-square&logo=safari&logoColor=white)](https://soclose.co)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-575ECF?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/company/soclose-agency)
-[![Twitter](https://img.shields.io/badge/Twitter-575ECF?style=flat-square&logo=x&logoColor=white)](https://twitter.com/SoCloseAgency)
-[![Email](https://img.shields.io/badge/contact%40soclose.co-575ECF?style=flat-square&logo=gmail&logoColor=white)](mailto:contact@soclose.co)
-
-<sub>If this tool helped you, give it a star!</sub>
-
-</div>
+<p align="center">
+  <sub>Built with purpose by <a href="https://soclose.co"><strong>SoClose</strong></a> &mdash; Digital Innovation Through Automation & AI</sub><br>
+  <sub>
+    <a href="https://soclose.co">Website</a> &bull;
+    <a href="https://linkedin.com/company/soclose-agency">LinkedIn</a> &bull;
+    <a href="https://twitter.com/SoCloseAgency">Twitter</a> &bull;
+    <a href="mailto:hello@soclose.co">Contact</a>
+  </sub>
+</p>
