@@ -25,9 +25,9 @@ from selenium.common.exceptions import (
 from os.path import dirname, join
 
 
-username =  input('Enter your linkedin Email : ')
-password = input('Enter your linkedin Password : ')
-file_name = input('Enter your file name : ')
+# username =  input('Enter your linkedin Email : ')
+# password = input('Enter your linkedin Password : ')
+# file_name = input('Enter your file name : ')
 
 
 # username =  ''
