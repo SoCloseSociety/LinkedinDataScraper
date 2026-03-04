@@ -135,20 +135,6 @@ with st.sidebar:
     st.caption(f"v{__version__} by SoClose | Playwright + Voyager API")
     st.divider()
 
-    st.subheader(":key: Authentication")
-    email = st.text_input(
-        "LinkedIn Email",
-        value=os.getenv("LINKEDIN_EMAIL", ""),
-        help="Your LinkedIn email. Can also be set via LINKEDIN_EMAIL env var.",
-    )
-    password = st.text_input(
-        "LinkedIn Password",
-        value=os.getenv("LINKEDIN_PASSWORD", ""),
-        type="password",
-        help="Your LinkedIn password. Can also be set via LINKEDIN_PASSWORD env var.",
-    )
-
-    st.divider()
     st.subheader(":mag: Search Parameters")
     keywords = st.text_input(
         "Keywords *",
